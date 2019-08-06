@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face { font-family: 'Blinker Regular';
+  src: url('assets/font/Blinker-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Blinker Bold';
+  src: url('assets/font/Blinker-Bold.ttf') format('truetype'); }
+@font-face { font-family: 'Blinker Thin';
+  src: url('assets/font/Blinker-Thin.ttf') format('truetype'); }
+@font-face { font-family: 'Blinker SemiBold';
+  src: url('assets/font/Blinker-SemiBold.ttf') format('truetype'); }
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Blinker Regular";
+}

@@ -1,0 +1,70 @@
+<header>
+  <ul class="header-wrapper-nav">
+    <li>
+      <a routerLink="/orders">Orders</a>
+    </li>
+    <li>
+      <a routerLink="/products">Poducts</a>
+    </li>
+    <li>
+      <a routerLink="/kitchen">Kitchen</a>
+    </li>
+    <li>
+      <a routerLink="/location">Location</a>
+    </li>
+    <li>
+      <a routerLink="/settings">Settings</a>
+    </li>
+  </ul>
+</header>
+
+<mat-drawer-container class="example-container" [hasBackdrop]="true">
+  <mat-drawer #drawer [mode]="true">
+
+  </mat-drawer>
+  <mat-drawer-content>
+<!--
+    <mat-form-field>
+      <mat-label>Sidenav mode</mat-label>
+      <mat-select #mode value="side">
+        <mat-option value="side">Side</mat-option>
+        <mat-option value="over">Over</mat-option>
+        <mat-option value="push">Push</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Has backdrop</mat-label>
+      <mat-select #hasBackdrop>
+        <mat-option>Unset</mat-option>
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+-->
+    <button mat-raised-button (click)="drawer.toggle()">X</button>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+<ul class="wrapper-nav">
+  <li>
+    <a routerLink="/orders">Orders</a>
+  </li>
+  <li>
+    <a routerLink="/products">Poducts</a>
+  </li>
+  <li>
+    <a routerLink="/kitchen">Kitchen</a>
+  </li>
+  <li>
+    <a routerLink="/location">Location</a>
+  </li>
+  <li>
+    <a routerLink="/settings">Settings</a>
+  </li>
+</ul>
+
+
+<router-outlet></router-outlet>
+
+
+
